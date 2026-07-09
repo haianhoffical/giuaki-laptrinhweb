@@ -1,0 +1,9 @@
+com\mycompany\laptrinhwebktgk\JakartaRestConfiguration.class
+newpackage\LoginServlet.class
+newpackage\RegisterServlet.class
+newpackage\User.class
+newpackage\UserDatabase.class
+newpackage\LogoutServlet.class
+newpackage\ConnectionPro.class
+com\mycompany\laptrinhwebktgk\resources\JakartaEE8Resource.class
+newpackage\SecurityUtil.class
