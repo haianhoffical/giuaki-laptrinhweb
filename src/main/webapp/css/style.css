@@ -1,0 +1,113 @@
+/* Thiết kế nền tối cho toàn bộ trang web (Mô phỏng bức tường gạch như hình mẫu trang 1 và 21) */
+body {
+    background-color: #1e1e1e;
+    background-image: linear-gradient(315deg, #1d1d1d 0%, #111111 74%);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Khung chứa Form (Container trắng bo góc nổi lên trên nền tối) */
+.container {
+    background-color: #ffffff;
+    padding: 35px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Định dạng hình ảnh Avatar giống hệt hướng dẫn tại Trang 17 của sách */
+.avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Tiêu đề Form (Register / Login Account) */
+h1 {
+    color: #333333;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Từng cụm nhóm ô nhập liệu */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Nhãn chữ (Username, Email, Password...) */
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Các ô Input nhập văn bản và mật khẩu */
+.form-group input[type="text"], 
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Hiệu ứng khi người dùng click chọn vào ô nhập */
+.form-group input[type="text"]:focus, 
+.form-group input[type="password"]:focus {
+    border-color: #00bcd4;
+    outline: none;
+}
+
+/* Nút bấm Submit (Register / Login) màu xanh Cyan sẫm theo mẫu */
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #00bcd4;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Hiệu ứng đổi màu nhẹ khi rê chuột vào nút bấm */
+input[type="submit"]:hover {
+    background-color: #0097a7;
+}
+
+/* Đường liên kết chuyển hướng (Đã có tài khoản?, Tạo tài khoản mới...) */
+a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0097a7;
+    text-decoration: underline;
+}
